@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.0.9/20024
 // Filename: ???? ???B_C.ggsk
-// Generated 2024-03-11T14:22:24
+// Generated 2024-03-11T14:42:36
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_roomchoice', 2, false, { ignoreInState: 0  });
@@ -5006,7 +5006,7 @@ function pano2vrSkin(player,base) {
 		el=me.__44=document.createElement('div');
 		el.ggId="\ubbf8\ub2c8\ub9f5";
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
-		el.ggVisible=false;
+		el.ggVisible=true;
 		el.className="ggskin ggskin_container ";
 		el.ggType='container';
 		hs ='';
@@ -5014,7 +5014,7 @@ function pano2vrSkin(player,base) {
 		hs+='left : 15px;';
 		hs+='position : absolute;';
 		hs+='top : 80px;';
-		hs+='visibility : hidden;';
+		hs+='visibility : inherit;';
 		hs+='width : 200px;';
 		hs+='pointer-events:none;';
 		el.setAttribute('style',hs);
@@ -5125,24 +5125,6 @@ function pano2vrSkin(player,base) {
 			{
 				newLogicStateVisible = 0;
 			}
-			else if (
-				((player.getIsMobile() == true))
-			)
-			{
-				newLogicStateVisible = 1;
-			}
-			else if (
-				((player.getViewerSize().width > 640))
-			)
-			{
-				newLogicStateVisible = 2;
-			}
-			else if (
-				((player.getIsMobile() == false))
-			)
-			{
-				newLogicStateVisible = 3;
-			}
 			else {
 				newLogicStateVisible = -1;
 			}
@@ -5153,21 +5135,9 @@ function pano2vrSkin(player,base) {
 					me.__44.style.visibility="hidden";
 					me.__44.ggVisible=false;
 				}
-				else if (me.__44.ggCurrentLogicStateVisible == 1) {
-					me.__44.style.visibility="hidden";
-					me.__44.ggVisible=false;
-				}
-				else if (me.__44.ggCurrentLogicStateVisible == 2) {
-					me.__44.style.visibility=(Number(me.__44.style.opacity)>0||!me.__44.style.opacity)?'inherit':'hidden';
-					me.__44.ggVisible=true;
-				}
-				else if (me.__44.ggCurrentLogicStateVisible == 3) {
-					me.__44.style.visibility=(Number(me.__44.style.opacity)>0||!me.__44.style.opacity)?'inherit':'hidden';
-					me.__44.ggVisible=true;
-				}
 				else {
-					me.__44.style.visibility="hidden";
-					me.__44.ggVisible=false;
+					me.__44.style.visibility=(Number(me.__44.style.opacity)>0||!me.__44.style.opacity)?'inherit':'hidden';
+					me.__44.ggVisible=true;
 				}
 			}
 		}
@@ -5671,24 +5641,6 @@ function pano2vrSkin(player,base) {
 			{
 				newLogicStateVisible = 0;
 			}
-			else if (
-				((player.getIsMobile() == true))
-			)
-			{
-				newLogicStateVisible = 1;
-			}
-			else if (
-				((player.getViewerSize().width > 640))
-			)
-			{
-				newLogicStateVisible = 2;
-			}
-			else if (
-				((player.getIsMobile() == false))
-			)
-			{
-				newLogicStateVisible = 3;
-			}
 			else {
 				newLogicStateVisible = -1;
 			}
@@ -5698,18 +5650,6 @@ function pano2vrSkin(player,base) {
 				if (me.__41.ggCurrentLogicStateVisible == 0) {
 					me.__41.style.visibility=(Number(me.__41.style.opacity)>0||!me.__41.style.opacity)?'inherit':'hidden';
 					me.__41.ggVisible=true;
-				}
-				else if (me.__41.ggCurrentLogicStateVisible == 1) {
-					me.__41.style.visibility=(Number(me.__41.style.opacity)>0||!me.__41.style.opacity)?'inherit':'hidden';
-					me.__41.ggVisible=true;
-				}
-				else if (me.__41.ggCurrentLogicStateVisible == 2) {
-					me.__41.style.visibility="hidden";
-					me.__41.ggVisible=false;
-				}
-				else if (me.__41.ggCurrentLogicStateVisible == 3) {
-					me.__41.style.visibility="hidden";
-					me.__41.ggVisible=false;
 				}
 				else {
 					me.__41.style.visibility="hidden";
@@ -7498,7 +7438,7 @@ function pano2vrSkin(player,base) {
 		}
 		me._d_type.logicBlock_backgroundcolor();
 		me._d_type.onclick=function (e) {
-			player.openUrl("https:\/\/magical-kitsune-263021.netlify.app","_self");
+			player.openUrl("https:\/\/sparkly-bavarois-aaee52.netlify.app\n","_self");
 		}
 		me._d_type.onmouseover=function (e) {
 			me.elementMouseOver['d_type']=true;
@@ -7614,7 +7554,7 @@ function pano2vrSkin(player,base) {
 		}
 		me._c_type.logicBlock_backgroundcolor();
 		me._c_type.onclick=function (e) {
-			player.openUrl("https:\/\/symphonious-donut-c5b810.netlify.app\/","_self");
+			player.openUrl("https:\/\/effervescent-bubblegum-d5b87c.netlify.app","_self");
 		}
 		me._c_type.onmouseover=function (e) {
 			me.elementMouseOver['c_type']=true;
@@ -7730,7 +7670,7 @@ function pano2vrSkin(player,base) {
 		}
 		me._b_type.logicBlock_backgroundcolor();
 		me._b_type.onclick=function (e) {
-			player.openUrl("https:\/\/luminous-starlight-0195ea.netlify.app\/","_self");
+			player.openUrl("https:\/\/classy-gecko-f72c11.netlify.app","_self");
 		}
 		me._b_type.onmouseover=function (e) {
 			me.elementMouseOver['b_type']=true;
@@ -12979,7 +12919,6 @@ function pano2vrSkin(player,base) {
 			me.__55.logicBlock_alpha();
 			me._rectangle_3.logicBlock_visible();
 			me._dowm.logicBlock_visible();
-			me.__44.logicBlock_visible();
 			me._map_11.logicBlock_visible();
 			for (var i=0; i < me._map_11.ggMarkerInstances.length; i++) {
 				me._map_11.ggMarkerInstances[i].ggEvent_configloaded();
@@ -12999,7 +12938,6 @@ function pano2vrSkin(player,base) {
 				me._map_21.ggInitMapMarkers(true);
 			}
 			me.__41.logicBlock_position();
-			me.__41.logicBlock_visible();
 			me._map_10.logicBlock_visible();
 			for (var i=0; i < me._map_10.ggMarkerInstances.length; i++) {
 				me._map_10.ggMarkerInstances[i].ggEvent_configloaded();
